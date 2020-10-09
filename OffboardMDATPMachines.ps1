@@ -1,3 +1,11 @@
+# Author - ScottC
+# Date - 10/9/2020
+# Version - 1.2
+# RUN AT YOUR OWN RISK
+
+# This script will unisolate machines 
+# in MDATP using the MDATP API
+
 $tenantId = '<tenant ID>' ### Paste your own tenant ID here
 $appId = '<app ID>' ### Paste your own app ID here
 $appSecret = '<app Secret>' ### Paste your own app keys here
