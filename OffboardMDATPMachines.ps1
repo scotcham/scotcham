@@ -3,7 +3,9 @@
 # Version - 1.2
 # RUN AT YOUR OWN RISK
 
-# This script will unisolate machines 
+# This script will offboard/isolate/unisolate machines 
+# depending on which URI used in the invoke REST method
+# Example:  https://api-us.securitycenter.windows.com/api/machines/$machine/<offboard,isolate,unisolate>
 # in MDATP using the MDATP API
 
 $tenantId = '<tenant ID>' ### Paste your own tenant ID here
