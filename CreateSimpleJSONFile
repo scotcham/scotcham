@@ -1,0 +1,17 @@
+# Define the JSON file path
+$jsonFilePath = "c:\learn\data.json"
+
+# Create a hashtable with data to write
+$data = @{
+    message = "Hello, World!"
+    timestamp = Get-Date
+}
+
+# Convert the data to JSON format
+$jsonContent = $data | ConvertTo-Json -Depth 1
+
+# Write the JSON content to a file
+$jsonContent | Set-Content -Path $jsonFilePath
+
+# Confirm file creation
+Write-Output "JSON file successfully written to $jsonFilePath"
